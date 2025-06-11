@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas Felices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mascotas Felices</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#ideal">Tu Mascota Ideal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Bienvenido al mundo de las Mascotas Felices</h1>
+            <p>Encuentra a tu compañero perfecto o aprende más sobre cómo cuidar a tus amigos peludos.</p>
+            <button class="cta-button">Explorar Mascotas</button>
+        </section>
+
+        <section id="galeria" class="gallery-section">
+            <h2>Nuestras Mascotas</h2>
+            <div class="gallery-container">
+                <div class="pet-card">
+                    <img src="https://via.placeholder.com/200" alt="Perro">
+                    <h3>Firulais</h3>
+                    <p>Un perro amigable y juguetón.</p>
+                    <button class="view-details" data-pet-id="1">Ver Detalles</button>
+                </div>
+                <div class="pet-card">
+                    <img src="https://via.placeholder.com/200" alt="Gato">
+                    <h3>Michi</h3>
+                    <p>Un gato tranquilo y cariñoso.</p>
+                    <button class="view-details" data-pet-id="2">Ver Detalles</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="ideal" class="quiz-section">
+            <h2>Encuentra tu Mascota Ideal</h2>
+            <form id="petQuiz">
+                <p>¿Tienes espacio para una mascota grande?</p>
+                <input type="radio" id="espacioSi" name="espacio" value="si">
+                <label for="espacioSi">Sí</label><br>
+                <input type="radio" id="espacioNo" name="espacio" value="no">
+                <label for="espacioNo">No</label><br>
+                <button type="submit">Sugerir Mascota</button>
+            </form>
+            <div id="quizResult"></div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mascotas Felices. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
